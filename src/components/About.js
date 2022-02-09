@@ -55,8 +55,11 @@ export default function About(props) {
             style={myStyle}
           >
             <div className="accordion-body" style={myStyle}>
-              <strong>I can analyze your text.</strong> I can convert to
-              uppercase, lower case, copy text and other different operations.
+              <strong>I can analyze your text.</strong> I am a free character
+              counter tool that provides instant character count & word count
+              statistics for a given text. I will report the number of words and
+              characters. Thus I am suitable for writing text with word/
+              character limit.
             </div>
           </div>
         </div>

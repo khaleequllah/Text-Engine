@@ -36,10 +36,7 @@ export default function Form(props) {
 
   //Copy to clipboard
   const handleCopy = () => {
-    var text = document.getElementById("myBox");
-    text.select();
-    navigator.clipboard.writeText(text.value);
-    document.getSelection().removeAllRanges();
+    navigator.clipboard.writeText(text);
     props.showAlert("Text Copied to clipboard", "success");
   };
   const [text, setText] = useState("");
