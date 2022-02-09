@@ -51,7 +51,7 @@ function App() {
             <Route path="/About" element={<About heading="About Us" />} />
 
             <Route
-              path="/Text-Engine"
+              path="/Text-Engine/"
               element={
                 <Form
                   showAlert={showAlert}
