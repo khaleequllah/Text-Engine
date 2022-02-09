@@ -83,17 +83,18 @@ export default function Form(props) {
         <button
           disabled={text.length === 0}
           className="btn btn-success mx-2 my-2"
-          onClick={handleClrClick}
+          onClick={handleExtraSpaces}
         >
-          Clear Text
+          Remove Extra Spaces
         </button>
         <button
           disabled={text.length === 0}
           className="btn btn-success mx-2 my-2"
-          onClick={handleExtraSpaces}
+          onClick={handleClrClick}
         >
-          ExtraSpaces
+          Clear Text
         </button>
+
         <button
           disabled={text.length === 0}
           className="btn btn-success mx-2 my-2"
@@ -112,7 +113,7 @@ export default function Form(props) {
         <p>
           {
             text.split(/\s+/).filter((element) => {
-              return element.length !==0;
+              return element.length !== 0;
             }).length
           }{" "}
           words and {text.length} characters
@@ -120,9 +121,9 @@ export default function Form(props) {
         <p>
           {0.008 *
             text.split(/\s+/).filter((element) => {
-              return element.length !==0;
+              return element.length !== 0;
             }).length}{" "}
-          Time to Read
+          minutes to Read
         </p>
         <h2>Preview</h2>
         <p>{text === "" ? "Enter your text in text box to preview" : text}</p>
