@@ -110,6 +110,7 @@ export default function Form(props) {
       >
         <h2>Your Text Summary</h2>
         <p>
+<<<<<<< HEAD
           {
             text.split(/\s+/).filter((element) => {
               return element.length !== 0;
@@ -123,6 +124,12 @@ export default function Form(props) {
               return element.length !== 0;
             }).length}{" "}
           Time to Read
+=======
+          {text.split(" ").filter((element) => {
+              return element.length != 0;
+            }).length}{" "} words and {text.length}{" "}
+          characters
+>>>>>>> fb5eb26017f5d948c96c647d321dbdff795ed3a5
         </p>
         <h2>Preview</h2>
         <p>{text === "" ? "Enter your text in text box to preview" : text}</p>
