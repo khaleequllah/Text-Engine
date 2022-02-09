@@ -44,12 +44,6 @@ function App() {
           mode={mode}
           toggleMode={toggleMode}
         />
-        <Form
-          showAlert={showAlert}
-          heading="Input Text"
-          mode={mode}
-          toggleMode={toggleMode}
-        />
         <div className="container my-3">
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
@@ -57,7 +51,7 @@ function App() {
             <Route path="/About" element={<About heading="About Us" />} />
 
             <Route
-              path="/"
+              path="/Text-Engine"
               element={
                 <Form
                   showAlert={showAlert}
