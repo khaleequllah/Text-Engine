@@ -92,7 +92,7 @@ export default function Form(props) {
       >
         <h2>Your Text Summary</h2>
         <p>
-          {text === "" ? 0 : text.split(" ").length} words and {text.length}{" "}
+          {text === "" ? 0 : 0.008 * text.split(" ").length} words and {text.length}{" "}
           characters
         </p>
         <p>{text === "" ? 0 : 0.008 * text.split(" ").length} Time to Read</p>
