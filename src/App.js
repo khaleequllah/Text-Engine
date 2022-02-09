@@ -61,6 +61,18 @@ function App() {
                 />
               }
             />
+
+            <Route
+              path="/"
+              element={
+                <Form
+                  showAlert={showAlert}
+                  heading="Input Text"
+                  mode={mode}
+                  toggleMode={toggleMode}
+                />
+              }
+            />
           </Routes>
         </div>
       </Router>
