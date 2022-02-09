@@ -48,10 +48,14 @@ function App() {
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
           <Routes>
-            <Route path="/About" element={<About heading="About Us" />} />
-
             <Route
-              path="/Text-Engine/"
+              path="/About"
+              element={<About heading="About Us" mode={mode} />}
+            >
+              {" "}
+            </Route>
+            <Route
+              path="/"
               element={
                 <Form
                   showAlert={showAlert}
