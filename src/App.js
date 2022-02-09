@@ -55,7 +55,7 @@ function App() {
               {" "}
             </Route>
             <Route
-              path="/"
+              path="/Text-Engine/"
               element={
                 <Form
                   showAlert={showAlert}
