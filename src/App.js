@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import About from "./components/About";
 import Alert from "./components/Alert";
-import Form from "./components/Form";
+import Form from "./components/Text-Engine";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -52,18 +52,6 @@ function App() {
 
             <Route
               path="/Text-Engine/"
-              element={
-                <Form
-                  showAlert={showAlert}
-                  heading="Input Text"
-                  mode={mode}
-                  toggleMode={toggleMode}
-                />
-              }
-            />
-
-            <Route
-              path="/"
               element={
                 <Form
                   showAlert={showAlert}
