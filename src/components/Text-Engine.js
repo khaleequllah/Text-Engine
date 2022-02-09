@@ -94,7 +94,7 @@ export default function Form(props) {
         <p>
           {text.split(" ").filter((element) => {
               return element.length != 0;
-            }).length} words and {text.length}{" "}
+            }).length}{" "} words and {text.length}{" "}
           characters
         </p>
         <p>{text === "" ? 0 : 0.008 * text.split(" ").length} Time to Read</p>
